@@ -1,0 +1,101 @@
+*,html { /* untuk melapisi semua yang ada  */
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    
+}
+   
+/* Jika menggunakan div class, maka untuk memanggil nya di css menggunakan titik(.) */
+/* Jika menggunakan id, maka untuk memanggilnya di css menggunakan pagar(#) */
+
+.container-navbar {
+    background-color: green;
+    height : 100px;
+    width : 100%;
+}
+
+.ul-navbar {
+    display : flex;
+    height: 100px; /*tinggi*/
+    justify-content: center; /*untuk menengahkan items*/
+    align-items: center; /*untuk menengahkan itemnya dari tinggi*/
+}
+
+.li-navbar { /*bagian untuk tulisan home, dll*/
+
+    /*border : 1px solid white; /*untuk bikin border tulisan berwarna putih*/
+    /*background-color: black; /*untuk bikin background tulisan home, dll berwarna hitam*/
+    list-style-type:none;/*Ini untuk menghilangkan titik titik*/
+    padding : 10px; /*untuk ukuran kotak*/
+    margin : 5px;
+    color : white;
+    font-size: 30px;;
+
+}
+
+.li-navbar:hover { /*ini untuk memberikan warna ketika cursor mengarah ke home,dll*/
+    background-color: tomato;
+    transition : .2s ease-in-out; /*ini untuk memberikan transisi*/
+    transition-delay: .3s;
+    border-radius : 8px; /*untuk memberikan bentuk yang kubus*/
+}
+
+.a-navbar {
+    color: white;
+    text-decoration: none; /*ini digunakan agar tidak terdapat garis bawah ditulisan home, dll*/
+    font-weight: 800;
+}
+
+.container-content {
+    background-color: white;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height : 100vh;
+}
+
+.a-content {
+    width: 500px ;
+    height : 500px;
+    background-color: tomato;
+    color: black;
+    text-decoration: none;
+    width: 720px;
+    height : 480px;
+    font-size : 30px;
+    display: flex; 
+    flex-direction :column; /* agar tulisan berada di bawah gambar */
+    justify-content : space-evenly;
+    align-items: center;
+    border-radius: 80px; /* untuk memberi bulatan di luar gambar */
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.image-content {
+    width : 200px;
+    height : 250 px;
+}
+
+.container-footer {
+    background-color:aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.h1-footer {
+    font-size: 40px;
+    color: white;
+}
+
+#biodata {
+    background: red;
+    width : 500px;
+    height: 500px;
+}
+
