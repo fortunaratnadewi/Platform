@@ -11,7 +11,7 @@ body {
 /* Jika menggunakan id, maka untuk memanggilnya di css menggunakan pagar(#) */
 
 .container-navbar {
-    background-color: green;
+    background-color: blue;
     height : 100px;
     width : 100%;
 }
@@ -59,7 +59,7 @@ body {
 .a-content {
     width: 500px ;
     height : 500px;
-    background-color: tomato;
+    background-color: pink;
     color: black;
     text-decoration: none;
     width: 720px;
@@ -77,7 +77,9 @@ body {
 
 .image-content {
     width : 200px;
-    height : 250 px;
+    height : 300px px;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-footer {
@@ -93,9 +95,4 @@ body {
     color: white;
 }
 
-#biodata {
-    background: red;
-    width : 500px;
-    height: 500px;
-}
 
