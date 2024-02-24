@@ -36,7 +36,7 @@ body {
 }
 
 .li-navbar:hover { /*ini untuk memberikan warna ketika cursor mengarah ke home,dll*/
-    background-color: rgb(71, 255, 141);
+    background-color : rgba(71,255,141);
     transition : .2s ease-in-out; /*ini untuk memberikan transisi*/
     transition-delay: .3s;
     border-radius : 8px; /*untuk memberikan bentuk yang kubus*/
@@ -94,5 +94,3 @@ body {
     font-size: 40px;
     color: white;
 }
-
-
