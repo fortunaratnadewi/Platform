@@ -11,7 +11,7 @@ body {
 /* Jika menggunakan id, maka untuk memanggilnya di css menggunakan pagar(#) */
 
 .container-navbar {
-    background-color: green;
+    background-color: rgb(0, 179, 255);
     height : 100px;
     width : 100%;
 }
@@ -36,7 +36,7 @@ body {
 }
 
 .li-navbar:hover { /*ini untuk memberikan warna ketika cursor mengarah ke home,dll*/
-    background-color: tomato;
+    background-color : rgba(71,255,141);
     transition : .2s ease-in-out; /*ini untuk memberikan transisi*/
     transition-delay: .3s;
     border-radius : 8px; /*untuk memberikan bentuk yang kubus*/
@@ -57,9 +57,9 @@ body {
 }
 
 .a-content {
-    width: 500px ;
-    height : 500px;
-    background-color: tomato;
+    width: 200px ;
+    height : 700px;
+    background-color: pink;
     color: black;
     text-decoration: none;
     width: 720px;
@@ -67,7 +67,7 @@ body {
     font-size : 30px;
     display: flex; 
     flex-direction :column; /* agar tulisan berada di bawah gambar */
-    justify-content : space-evenly;
+    justify-content :center;
     align-items: center;
     border-radius: 80px; /* untuk memberi bulatan di luar gambar */
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -76,8 +76,8 @@ body {
 }
 
 .image-content {
-    width : 200px;
-    height : 250 px;
+    width : 250px;
+    height : 300 px;
 }
 
 .container-footer {
@@ -91,11 +91,5 @@ body {
 .h1-footer {
     font-size: 40px;
     color: white;
-}
-
-#biodata {
-    background: red;
-    width : 500px;
-    height: 500px;
 }
 
