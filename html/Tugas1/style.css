@@ -25,8 +25,8 @@ body {
 
 .li-navbar { /*bagian untuk tulisan home, dll*/
 
-    /*border : 1px solid white; /*untuk bikin border tulisan berwarna putih*/
-    /*background-color: black; /*untuk bikin background tulisan home, dll berwarna hitam*/
+    border : 1px solid white; /*untuk bikin border tulisan berwarna putih*/
+    background-color: black; /*untuk bikin background tulisan home, dll berwarna hitam */
     list-style-type:none;/*Ini untuk menghilangkan titik titik*/
     padding : 10px; /*untuk ukuran kotak*/
     margin : 5px;
@@ -49,39 +49,33 @@ body {
 }
 
 .container-content {
+    background-image:url(gradien.jpg);
     background-color: white;
-    /* display : flex; */
-    /* justify-content: space-between;
+    display : flex;
+    justify-content: space-between;
     align-items: center;
     height : 100vh;
-    flex-direction: row; */
-/* 
-    justify-content: space-around;
-    flex-direction: row; */
+    flex-direction: row;
 }
 
-.a-content {
-    width: 200px ;
-    height : 700px;
+ .a-content {
     background-color: pink;
-    color: black;
-    text-decoration: none;
     width: 720px;
     height : 480px;
     font-size : 30px;
-    /* display: flex;  */
-    flex-direction :column; /* agar tulisan berada di bawah gambar */
-    /* justify-content :center;
-    align-items: center; */
-    border-radius: 80px; /* untuk memberi bulatan di luar gambar */
+    display: flex; 
+    align-items: center; 
+    justify-content :center; 
+    margin-right: 20px;
+    border-radius: 80px;  /* untuk memberi bulatan di luar gambar */
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+
+ }
 
 .image-content {
     width : 250px;
-
     height : 300px;
     justify-content: center;
     align-items: center;
@@ -90,7 +84,7 @@ body {
 
 .container-footer {
     background-color:aqua;
-    /* display: flex; */
+    display: flex; 
     justify-content: center;
     align-items: center;
 
@@ -101,8 +95,9 @@ body {
     color: white;
 }
 
-.paragraf {
+.tulisan{
+    text-align: left;
     font-size: medium;
-    text-align:justify;
-}
+    margin-right: 20px;
 
+}
