@@ -50,10 +50,14 @@ body {
 
 .container-content {
     background-color: white;
-    display : flex;
-    justify-content: center;
+    /* display : flex; */
+    /* justify-content: space-between;
     align-items: center;
     height : 100vh;
+    flex-direction: row; */
+/* 
+    justify-content: space-around;
+    flex-direction: row; */
 }
 
 .a-content {
@@ -65,10 +69,10 @@ body {
     width: 720px;
     height : 480px;
     font-size : 30px;
-    display: flex; 
+    /* display: flex;  */
     flex-direction :column; /* agar tulisan berada di bawah gambar */
-    justify-content :center;
-    align-items: center;
+    /* justify-content :center;
+    align-items: center; */
     border-radius: 80px; /* untuk memberi bulatan di luar gambar */
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -78,11 +82,13 @@ body {
 .image-content {
     width : 250px;
     height : 300 px;
+    float :right;
+
 }
 
 .container-footer {
     background-color:aqua;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 
@@ -91,5 +97,10 @@ body {
 .h1-footer {
     font-size: 40px;
     color: white;
+}
+
+.paragraf {
+    font-size: medium;
+    text-align:justify;
 }
 
