@@ -81,15 +81,11 @@ body {
 
 .image-content {
     width : 250px;
-<<<<<<< HEAD:html/Tugas1/style.css
-    height : 300 px;
-    float :right;
 
-=======
     height : 300px;
     justify-content: center;
     align-items: center;
->>>>>>> f57193658737471de7f6ac3d3a9a0176ca929ccb:html/style.css
+
 }
 
 .container-footer {
@@ -104,12 +100,9 @@ body {
     font-size: 40px;
     color: white;
 }
-<<<<<<< HEAD:html/Tugas1/style.css
 
 .paragraf {
     font-size: medium;
     text-align:justify;
 }
 
-=======
->>>>>>> f57193658737471de7f6ac3d3a9a0176ca929ccb:html/style.css
