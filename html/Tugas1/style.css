@@ -6,12 +6,12 @@
 body {
     
 }
-   
+
 /* Jika menggunakan div class, maka untuk memanggil nya di css menggunakan titik(.) */
 /* Jika menggunakan id, maka untuk memanggilnya di css menggunakan pagar(#) */
 
 .container-navbar {
-    background-color: rgb(0, 179, 255);
+    background-color: rgb(151, 202, 168);
     height : 100px;
     width : 100%;
 }
@@ -26,7 +26,8 @@ body {
 .li-navbar { /*bagian untuk tulisan home, dll*/
 
     border : 1px solid white; /*untuk bikin border tulisan berwarna putih*/
-    background-color: black; /*untuk bikin background tulisan home, dll berwarna hitam */
+    border-radius: 80px;
+    background-color: rgb(158, 108, 108); /*untuk bikin background tulisan home, dll berwarna hitam */
     list-style-type:none;/*Ini untuk menghilangkan titik titik*/
     padding : 10px; /*untuk ukuran kotak*/
     margin : 5px;
@@ -36,10 +37,10 @@ body {
 }
 
 .li-navbar:hover { /*ini untuk memberikan warna ketika cursor mengarah ke home,dll*/
-    background-color : rgba(71,255,141);
+    background-color : rgb(174, 220, 192);
     transition : .2s ease-in-out; /*ini untuk memberikan transisi*/
     transition-delay: .3s;
-    border-radius : 8px; /*untuk memberikan bentuk yang kubus*/
+    border-radius : 80px; /*untuk memberikan bentuk yang kubus*/
 }
 
 .a-navbar {
@@ -49,7 +50,7 @@ body {
 }
 
 .container-content {
-    background-image:url(gradien.jpg);
+    background-image:url(kue.webp);
     background-color: white;
     display : flex;
     justify-content: space-between;
@@ -59,9 +60,10 @@ body {
 }
 
  .a-content {
-    background-color: pink;
-    width: 720px;
-    height : 480px;
+    background-color: rgb(235, 224, 191);
+    background-image: none;
+    width: 520px;
+    height : 380px;
     font-size : 30px;
     display: flex; 
     align-items: center; 
@@ -79,7 +81,7 @@ body {
     height : 300px;
     justify-content: center;
     align-items: center;
-
+    background-image: none;
 }
 
 .container-footer {
