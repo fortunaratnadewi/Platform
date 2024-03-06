@@ -12,13 +12,14 @@ body {
 
 .container-navbar {
     background-color: rgb(151, 202, 168);
-    height : 100px;
+    height : 100px; /* tinggi dari container-navbar */
     width : 100%;
+    /* tinggi dari  */
 }
 
 .ul-navbar {
-    display : flex;
-    height: 100px; /*tinggi*/
+    display : flex; /* berfungsi agar posisi home, dll berurutan ke samping  */
+    height: 100px; /*tinggi dari ul-navbar*/
     justify-content: center; /*untuk menengahkan items*/
     align-items: center; /*untuk menengahkan itemnya dari tinggi*/
 }
@@ -26,13 +27,13 @@ body {
 .li-navbar { /*bagian untuk tulisan home, dll*/
 
     border : 1px solid white; /*untuk bikin border tulisan berwarna putih*/
-    border-radius: 80px;
-    background-color: rgb(158, 108, 108); /*untuk bikin background tulisan home, dll berwarna hitam */
+    border-radius: 80px;  /* Ini supaya bentuk pinggirannya tidak kotak */
+    background-color: rgb(158, 108, 108); /*untuk bikin background tulisan home, dll */
     list-style-type:none;/*Ini untuk menghilangkan titik titik*/
     padding : 10px; /*untuk ukuran kotak*/
-    margin : 5px;
+    margin : 5px; /* untuk bikin jarak antar home, dll */
     color : white;
-    font-size: 30px;;
+    font-size: 30px;
 
 }
 
@@ -46,22 +47,22 @@ body {
 .a-navbar {
     color: white;
     text-decoration: none; /*ini digunakan agar tidak terdapat garis bawah ditulisan home, dll*/
-    font-weight: 800;
+    font-weight: 800px;
 }
 
 .container-content {
-    background-image:url(kue.webp);
-    background-color: white;
+    background-color:rgb(244, 202, 209);
     display : flex;
     justify-content: space-between;
     align-items: center;
     height : 100vh;
     flex-direction: row;
+    
+    
 }
 
  .a-content {
     background-color: rgb(235, 224, 191);
-    background-image: none;
     width: 520px;
     height : 380px;
     font-size : 30px;
@@ -69,12 +70,14 @@ body {
     align-items: center; 
     justify-content :center; 
     margin-right: 20px;
-    border-radius: 80px;  /* untuk memberi bulatan di luar gambar */
+    border-radius: 80px;   /* untuk memberi bulatan di luar gambar */
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+    margin-left: 10px;
+    margin-right:70px
 
- }
+ } 
 
 .image-content {
     width : 250px;
@@ -84,8 +87,15 @@ body {
     background-image: none;
 }
 
+.tulisan{
+    font-size: 50px;
+    margin-left: 50px;
+    font-style:initial;
+    
+}
+
 .container-footer {
-    background-color:aqua;
+    background-color:rgb(143, 188, 143);
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -93,13 +103,9 @@ body {
 }
 
 .h1-footer {
-    font-size: 40px;
+    font-size: 50px;
     color: white;
 }
 
-.tulisan{
-    text-align: left;
-    font-size: medium;
-    margin-right: 20px;
 
-}
+
