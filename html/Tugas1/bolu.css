@@ -1,0 +1,90 @@
+body {
+    font : 16px arial, sans-serif;
+    background-color:antiquewhite;
+    color : #333;
+}
+
+.container {
+    width : 700px;
+    margin : auto;
+    background-color: white;
+}
+
+.header {
+    padding: 20px;
+   
+}
+
+.header .judul{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.header a{
+    text-decoration: none;
+    color:black;
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color:burlywood;
+    color :azure;
+
+}
+
+.hero {
+    height: 300px;
+    background-image: url(kue.jpg);
+    background-size: cover; 
+    background-position: 0 -180px;
+    border-top: 5px solid lightcoral;
+    border-bottom: 5px solid lightcoral;
+
+}
+
+.content{
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content .penulis {
+    font-size: 17px;
+    margin-top: -5px;
+
+}
+
+.footer {
+    background-color: #333;
+    padding : 10px
+}
+
+.footer .Copy{
+    color:aquamarine;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

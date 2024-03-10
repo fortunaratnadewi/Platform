@@ -5,7 +5,7 @@
 
 body {
     
-}
+}   
 
 /* Jika menggunakan div class, maka untuk memanggil nya di css menggunakan titik(.) */
 /* Jika menggunakan id, maka untuk memanggilnya di css menggunakan pagar(#) */
@@ -141,7 +141,6 @@ body {
     background-color: aliceblue;
     margin-top: -500px;
     margin-left: 500px;
-    margin-bottom: 100px;
     display:inline-block;
 }
 
