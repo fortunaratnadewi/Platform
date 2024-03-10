@@ -13,8 +13,7 @@ body {
 .container-navbar {
     background-color: rgb(151, 202, 168);
     height : 100px; /* tinggi dari container-navbar */
-    width : 100%;
-    /* tinggi dari  */
+    width : 100%;/* tinggi dari  */
 }
 
 .ul-navbar {
@@ -53,12 +52,16 @@ body {
 .container-content {
     background-color:rgb(244, 202, 209);
     display : flex;
-    justify-content: space-between;
-    align-items: center;
-    height : 100vh;
-    flex-direction: row;
-    
-    
+    justify-content: space-between; 
+    align-items : center;
+    height : 1000px;
+    flex-direction: row; 
+}
+
+.container-contentAbout{
+    background-color:rgb(244,202,200);
+    display : flex;
+    height : 1000px;
 }
 
  .a-content {
@@ -84,21 +87,67 @@ body {
     height : 300px;
     justify-content: center;
     align-items: center;
-    background-image: none;
+    
 }
 
 .tulisan{
     font-size: 50px;
     margin-left: 50px;
     font-style:initial;
-    
 }
 
 .container-footer {
     background-color:rgb(143, 188, 143);
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.image-contentBolu {
+    width : 250px;
+    height : 300px;
+    margin-top: 20px;
+    margin-left: 80px;
+
+    
+}
+
+.Bolu {
+    height:400px;
+    width: 400px;
+    background-color: aliceblue;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.bolu-tulisan{
+    width : 400px;
+    background-color: aliceblue;
+
+}
+
+.image-contentBika {
+    width : 250px;
+    height : 300px;
+    margin-top: 20px;
+    margin-left: 80px;
+
+}
+
+.Bika {
+    height:400px;
+    width: 400px;
+    background-color: aliceblue;
+    margin-top: -500px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    display:inline-block;
+}
+
+.bika-tulisan {
+    width : 400px;
+    background-color: aliceblue;
 
 }
 
