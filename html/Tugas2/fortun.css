@@ -1,21 +1,60 @@
 body{
-    background-color: rgb(237, 200, 206);
+    background-image: url("galaxy.jpg");
     align-items: center;
 }
 
 header {
-    width : 400px;
-    margin-left: 400px;
-    margin-right: 420px;
-    margin-bottom: 30px;
-    background-color: #fff;
-   
+    width: 100%;
+    text-align: center;
+    animation: moveHeader 5s linear infinite alternate; /* Animasi header */
 }
+
+@keyframes moveHeader {
+    0% {
+        transform: translateX(0); /* Mulai dari posisi awal */
+    }
+    100% {
+        transform: translateX(200px); /* Pindah 200px ke kanan */
+    }
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #0b0b0b;
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+h2 {
+    color: aliceblue;
+    size: 30px;
+
+}
+
+h3 {
+    color: aliceblue;
+    size: 10px;
+}
+
+tulis{
+    color: black;
+}
+
+h1:first-child {
+    font-weight: bold;
+}
+
+h1:last-child {
+    font-size: 18px;
+    color: #666;
+}
+
 
 .keseluruhan {
         height:40px;
         width: 20px;
-        margin-left: 400px;  
+        margin-left: 100px;  
+        margin-top: 20px;
 }
 
 .foto {
@@ -26,6 +65,7 @@ header {
 .image {
     height: 400px;
     width : 400px;
+    margin-top: 20px;
     border-radius: 20px;
 }
 
@@ -38,6 +78,8 @@ header {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
+    margin-left: 450px;
+    margin-top: -400px;
 }
 
 .form label {
@@ -69,6 +111,14 @@ header {
 .form button:hover {
     background-color: #0056b3;
 }
+
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+
 
 
 *{margin: 0;

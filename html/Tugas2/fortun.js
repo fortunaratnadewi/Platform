@@ -4,6 +4,33 @@ var radio = [];
 var pilihanElement;
 
 document.getElementById("btn").addEventListener("click", function (e) {
+
+  var nama = document.getElementById("nama").value.trim();
+    var jumlah = document.getElementById("jumlah").value.trim();
+    var nameError = document.getElementById("nameError");
+
+    // Validasi input nama
+    if (nama === "") {
+        nameError.textContent = "Nama tidak boleh kosong";
+        return;
+    } else if (!/^[a-zA-Z\s]+$/.test(nama)) {
+        nameError.textContent = "Nama hanya boleh berisi huruf";
+        return;
+    } else {
+        nameError.textContent = ""; // Hapus pesan kesalahan jika nama valid
+    }
+
+    // Validasi input jumlah
+    if (jumlah === "") {
+        nameError.textContent = "Jumlah tidak boleh kosong";
+        return;
+    } else if (isNaN(jumlah) || parseInt(jumlah) < 1) {
+        nameError.textContent = "Jumlah harus merupakan angka positif";
+        return;
+    } else {
+        nameError.textContent = ""; // Hapus pesan kesalahan jika jumlah valid
+    }
+
   textInput();
   this.remove();
 });
@@ -109,45 +136,45 @@ function textRadio() {
   });
 }
 
+
 function tampilkanData() {
-  var jumlah = document.getElementById("jumlah").value;
   var nama = document.getElementById("nama").value;
+  var jumlah = document.getElementById("jumlah").value;
   var pilihanText = document.createElement("p");
+  var tampilanInputs = document.getElementById("tampilanInputs");
+  var radioButtons = document.getElementsByName("teksTampilan");
 
   pilihanText.textContent =
-    "Halo nama saya : " + nama + ", saya mempunyai sejumlah " + jumlah +
-    " Pilihan yaitu: "; 
+      "Halo, nama saya: " + nama + ", saya memiliki " + jumlah + " pilihan:";
 
   if (!pilihanElement) {
-    pilihanElement = document.createElement("div");
-    tampilanInputs.appendChild(pilihanElement);
+      pilihanElement = document.createElement("div");
+      tampilanInputs.appendChild(pilihanElement);
   }
 
   pilihanElement.innerHTML = "";
   pilihanElement.appendChild(pilihanText);
 
   // Menampilkan semua pilihan
-  for (var i = 0; i < radio.length; i++) {
-    var pilihanElement = document.createElement("p");
-    pilihanElement.textContent = "Pilihan " + (i + 1) + ": " + data[i];
-    tampilanInputs.appendChild(pilihanElement);
+  for (var i = 0; i < radioButtons.length; i++) {
+      var pilihanElement = document.createElement("p");
+      pilihanElement.textContent = "Pilihan " + (i + 1) + ": " + radioButtons[i].nextSibling.textContent;
+      tampilanInputs.appendChild(pilihanElement);
   }
 
   // Menampilkan pilihan yang dipilih
   var pilihanDipilih = "";
-  for (var i = 0; i < radio.length; i++) {
-    if (radio[i].checked) {
-      pilihanDipilih = data[i];
-      break;
-    }
+  for (var i = 0; i < radioButtons.length; i++) {
+      if (radioButtons[i].checked) {
+          pilihanDipilih = radioButtons[i].nextSibling.textContent;
+          break;
+      }
   }
   var pilihanDipilihElement = document.createElement("p");
   pilihanDipilihElement.textContent =
-    "Pilihan yang saya pilih adalah : " + pilihanDipilih;
+      "Pilihan yang saya pilih adalah: " + pilihanDipilih;
   tampilanInputs.appendChild(pilihanDipilihElement);
 }
-
-
 
 
 
