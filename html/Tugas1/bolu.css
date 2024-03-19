@@ -49,7 +49,7 @@ body {
 
 .content{
     padding: 20px;
-    text-align: center;
+
 }
 
 .content h2 {
@@ -60,7 +60,6 @@ body {
 .content .penulis {
     font-size: 17px;
     margin-top: -5px;
-
 }
 
 .footer {
