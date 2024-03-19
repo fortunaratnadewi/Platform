@@ -4,9 +4,12 @@ body{
 }
 
 header {
+    width : 400px;
     margin-left: 400px;
+    margin-right: 420px;
     margin-bottom: 30px;
-    background-color: azure;
+    background-color: #fff;
+   
 }
 
 .keseluruhan {
