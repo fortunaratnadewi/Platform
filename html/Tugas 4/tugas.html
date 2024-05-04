@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas</title>
+
+    <!-- link css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <!-- link icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!--  untuk css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+
+    <!-- Mebuat Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient shadow mr-2" style="padding-bottom: 2px;">
+
+      <div class="container md-5">
+        <a class="navbar-brand" href="#">
+          <img src="Fortun.jpeg" alt="" width="30" height="24" class="d-inline-block align-text-top" />  
+          TiketsFor
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          
+           <ul class="navbar-nav ms-auto">
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeri">Kisahku</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pendidikan">Pendidikan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tugas.html">Tugas</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </nav> 
+    <!-- Mengakhiri navbar -->
+
+    <!-- Membuat konfirmasi -->
+
+    <section id="tugas">
+      <div class="container">
+        <div class="row mb-5 mt-5 text-center">
+          <div class="col-md-11">
+            <h2>Tugas</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <form>
+              <div class="row g-3">
+                <div class="col mb-3">
+                  <label for="email" class="form-label">Nama Depan</label>
+                  <input type="text" class="form-control" aria-label="First name">
+                </div>
+                <div class="col mb-3">
+                  <label for="email" class="form-label">Nama Belakang</label>
+                  <input type="text" class="form-control"  aria-label="Last name">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="validationServer04" class="form-label">Jumlah Pilihan Hobi</label>
+                <select class="form-select" required aria-label="select example">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4</option>
+                  <option value="3">5</option>
+                  <option value="3">6</option>
+                </select>
+                </select>
+                </select>
+                </select>
+                <div class="invalid-feedback">Example invalid select feedback</div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div id="selectedOptions"></div>
+            <div id="checkboxContainer"></div>
+            <div id="dataContainer"></div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mengakhiri konfirmasi -->
+
+     <!-- Membuat footer  -->
+     <footer class=" footer bg-secondary text-white text-center">
+      <h1>TiketsFor</h1>
+      <p>Created with <i class="bi bi-suit-heart-fill"> </i> by Fortuna Ratna Dewi</p>
+    </footer>
+    <!-- Akhir footer -->
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (validateForm()) {
+      const jumlahPilihan = parseInt(document.querySelector('.form-select').value);
+      displaySelectedOptions(jumlahPilihan);
+    } else {
+      alert('Form is not valid, please check your input.');
+    }
+  });
+
+  function validateForm() {
+    const firstName = document.querySelector('input[aria-label="First name"]').value;
+    const lastName = document.querySelector('input[aria-label="Last name"]').value;
+    const email = document.getElementById('email').value;
+    const jumlahPilihan = document.querySelector('.form-select').value;
+
+    if (firstName.trim() === '' || lastName.trim() === '' || email.trim() === '' || jumlahPilihan.trim() === '') {
+      return false;
+    }
+
+    // Check if first name contains only numbers
+    if (/^\d+$/.test(firstName)) {
+      alert('First name cannot be a number');
+      return false;
+    }
+
+    // Check if last name contains only numbers
+    if (/^\d+$/.test(lastName)) {
+      alert('Last name cannot be a number');
+      return false;
+    }
+
+    // Check if email ends with "@gmail.com"
+    if (!email.endsWith('@gmail.com')) {
+      alert('Email is not valid, please enter a valid Gmail address');
+      return false;
+    }
+
+    return true;
+  }
+
+  function displaySelectedOptions(jumlahPilihan) {
+    const selectedOptionsDiv = document.getElementById('selectedOptions');
+    selectedOptionsDiv.innerHTML = ''; // Clear previous selections
+
+    for (let i = 0; i < jumlahPilihan; i++) {
+      const optionLabel = document.createElement('label');
+      optionLabel.textContent = `Pilihan ${i + 1}:`;
+      selectedOptionsDiv.appendChild(optionLabel);
+
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.name = `option${i + 1}`;
+      input.placeholder = `Masukkan pilihan ${i + 1}`;
+      selectedOptionsDiv.appendChild(input);
+
+      selectedOptionsDiv.appendChild(document.createElement('br')); // Add line break
+    }
+
+    // Add submit button
+    const submitButton = document.createElement('button');
+    submitButton.type = 'button'; // Change type to 'button' to prevent form submission
+    submitButton.className = 'btn btn-primary';
+    submitButton.textContent = 'Submit';
+    submitButton.addEventListener('click', function () {
+      displayCheckboxOptions(jumlahPilihan);
+      
+    });
+    selectedOptionsDiv.appendChild(submitButton);
+  }
+
+  function displayCheckboxOptions(jumlahPilihan) {
+  const checkboxContainer = document.getElementById('checkboxContainer');
+  checkboxContainer.innerHTML = ''; // Clear previous checkbox
+
+  for (let i = 0; i < jumlahPilihan; i++) {
+    const inputValue = document.querySelector(`input[name="option${i + 1}"]`).value;
+
+    const inputCheckbox = document.createElement('input');
+    inputCheckbox.type = 'checkbox';
+    inputCheckbox.name = `selectedOption${i + 1}`;
+    inputCheckbox.value = inputValue;
+    
+    checkboxContainer.appendChild(inputCheckbox);
+
+    const checkboxLabel = document.createElement('label');
+    checkboxLabel.textContent = inputValue;
+    checkboxLabel.appendChild(document.createElement('br')); // Add line break
+
+    checkboxContainer.appendChild(checkboxLabel);
+    checkboxContainer.appendChild(document.createElement('br')); // Add line break
+  }
+
+  // Add submit button
+  const submitButton = document.createElement('button');
+  submitButton.type = 'button'; // Change type to 'button' to prevent form submission
+  submitButton.className = 'btn btn-primary';
+  submitButton.textContent = 'Submit';
+  submitButton.addEventListener('click', function () {
+  displayData(jumlahPilihan);
+});
+  checkboxContainer.appendChild(submitButton);
+}
+
+function displayData(jumlahPilihan) {
+  const namaDepan = document.querySelector('input[aria-label="First name"]').value;
+  const namaBelakang = document.querySelector('input[aria-label="Last name"]').value;
+  const email = document.getElementById('email').value;
+  const inputOptions = [];
+  const selectedOptions = [];
+
+  // Mengumpulkan nilai input jumlah hobi
+  for (let i = 0; i < jumlahPilihan; i++) {
+    const optionValue = document.querySelector(`input[name="option${i + 1}"]`).value;
+    inputOptions.push(optionValue);
+  }
+
+  // Mengumpulkan semua pilihan hobi yang dipilih
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+  checkboxes.forEach(function (checkbox) {
+    selectedOptions.push(checkbox.value);
+  });
+
+  const dataContainer = document.getElementById('dataContainer');
+  dataContainer.innerHTML = ''; // Membersihkan data sebelumnya
+
+  const dataParagraph = document.createElement('p');
+  // Membuat kalimat dengan semua nilai input jumlah hobi dan pilihan hobi yang dipilih
+  dataParagraph.textContent = `Hallo Saya ${namaDepan} ${namaBelakang}, dengan email ${email}, saya memiliki sejumlah ${inputOptions.length} pilihan hobi, yaitu ${inputOptions.join(', ')}. Saya menyukai ${selectedOptions.length} dari pilihan tersebut, yaitu ${selectedOptions.join(', ')}.`;
+  dataContainer.appendChild(dataParagraph);
+  dataContainer.appendChild(document.createElement('br'));
+}
+      })
+
+    </script>
+  </body>
+</html>

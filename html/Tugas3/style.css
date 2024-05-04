@@ -1,0 +1,22 @@
+body {
+  min-height: 2000px;
+}
+
+.navbar {
+  height: 70px;
+}
+
+section {
+  padding-top: 1rem;
+}
+
+.carousel-item img {
+  padding-top: -5rem;
+  max-width: 100%; /* Maksimum lebar gambar adalah 100% dari lebar parent */
+  height: auto; /* Menjaga proporsi gambar */
+  max-height: 600px; /* Maksimum tinggi gambar */
+}
+
+footer {
+  padding-bottom: 1rem;
+}

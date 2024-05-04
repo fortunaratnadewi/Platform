@@ -1,0 +1,22 @@
+body {
+  min-height: 400px;
+}
+
+.Jumbotron {
+  background-color: grey;
+}
+.navbar {
+  height: 70px;
+}
+
+footer {
+  padding-bottom: 2rem;
+}
+
+section {
+  padding-bottom: 2rem;
+}
+
+#galeri {
+  background-color: gray;
+}
