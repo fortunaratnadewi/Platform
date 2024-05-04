@@ -1,126 +1,122 @@
-body{
-    background-image: url("galaxy.jpg");
-    align-items: center;
+body {
+  background-image: url("galaxy.jpg");
+  align-items: center;
 }
 
 header {
-    width: 100%;
-    text-align: center;
-    animation: moveHeader 5s linear infinite alternate; /* Animasi header */
+  width: 100%;
+  text-align: center;
+  animation: moveHeader 5s linear infinite alternate; /* Animasi header */
 }
 
 @keyframes moveHeader {
-    0% {
-        transform: translateX(0); /* Mulai dari posisi awal */
-    }
-    100% {
-        transform: translateX(200px); /* Pindah 200px ke kanan */
-    }
+  0% {
+    transform: translateX(0); /* Mulai dari posisi awal */
+  }
+  100% {
+    transform: translateX(200px); /* Pindah 200px ke kanan */
+  }
 }
 
 h1 {
-    font-family: 'Arial', sans-serif;
-    color: #0b0b0b;
-    font-size: 30px;
-    margin: 5px 0;
+  font-family: "Arial", sans-serif;
+  color: #0b0b0b;
+  font-size: 30px;
+  margin: 5px 0;
 }
 
 h2 {
-    color: aliceblue;
-    size: 30px;
-
+  color: aliceblue;
+  size: 30px;
 }
 
 h3 {
-    color: aliceblue;
-    size: 10px;
+  color: aliceblue;
+  size: 10px;
 }
 
-tulis{
-    color: black;
+tulis {
+  color: black;
 }
 
 h1:first-child {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 h1:last-child {
-    font-size: 18px;
-    color: #666;
+  font-size: 18px;
+  color: #666;
 }
 
-
 .keseluruhan {
-        height:40px;
-        width: 20px;
-        margin-left: 100px;  
-        margin-top: 20px;
+  height: 40px;
+  width: 20px;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
 .foto {
-    height: 400px;
-    width: 400px;
+  height: 400px;
+  width: 400px;
 }
 
 .image {
-    height: 400px;
-    width : 400px;
-    margin-top: 20px;
-    border-radius: 20px;
+  height: 400px;
+  width: 400px;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
 .form {
-    background-color: rgb(134, 227, 236);
-    width: 300px;
-    margin-left: 45px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    margin-left: 450px;
-    margin-top: -400px;
+  background-color: rgb(134, 227, 236);
+  width: 300px;
+  margin-left: 45px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  margin-left: 450px;
+  margin-top: -400px;
 }
 
 .form label {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .form input[type="text"],
 .form input[type="number"] {
-    width: calc(100% - 10px); /* Menggunakan kalkulasi untuk menghindari overflow */
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box; /* Menghindari padding dan border menambah lebar elemen*/
-} 
+  width: calc(100% - 10px); /* Menggunakan kalkulasi untuk menghindari overflow */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Menghindari padding dan border menambah lebar elemen*/
+}
 
 .form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .form button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
-
 
 .error {
-    color: red;
-    font-size: 14px;
+  color: red;
+  font-size: 14px;
 }
 
-
-
-
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
